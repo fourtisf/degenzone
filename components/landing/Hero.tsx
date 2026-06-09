@@ -45,8 +45,7 @@ export default function Hero() {
         >
           <Link
             href="/app"
-            className="group inline-flex items-center gap-2 px-5 py-3 rounded-md font-semibold text-sm text-black hover:brightness-110 transition shadow-[0_8px_30px_-8px_rgba(255,184,0,0.6)]"
-            style={{ background: 'linear-gradient(135deg, #FFB800 0%, #FF6B35 100%)' }}
+            className="group bg-brand-gradient shadow-brand inline-flex items-center gap-2 px-5 py-3 rounded-md font-semibold text-sm text-black hover:brightness-110 transition"
           >
             Launch the heatmap
             <ArrowRight size={14} strokeWidth={2.5} className="group-hover:translate-x-0.5 transition" />

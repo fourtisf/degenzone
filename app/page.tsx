@@ -58,8 +58,7 @@ function CTA() {
           </p>
           <Link
             href="/app"
-            className="inline-flex items-center gap-2 mt-8 px-6 py-3 rounded-md font-semibold text-sm text-black hover:brightness-110 transition shadow-[0_8px_30px_-8px_rgba(255,184,0,0.6)]"
-            style={{ background: 'linear-gradient(135deg, #FFB800 0%, #FF6B35 100%)' }}
+            className="bg-brand-gradient shadow-brand inline-flex items-center gap-2 mt-8 px-6 py-3 rounded-md font-semibold text-sm text-black hover:brightness-110 transition"
           >
             Launch DegenZone
             <ArrowRight size={14} strokeWidth={2.5} />

@@ -31,8 +31,7 @@ export default function NotFound() {
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link
               href="/app"
-              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded font-semibold text-sm text-black hover:brightness-110 transition shadow-[0_8px_24px_-6px_rgba(255,184,0,0.6)]"
-              style={{ background: 'linear-gradient(135deg, #FFB800 0%, #FF6B35 100%)' }}
+              className="bg-brand-gradient inline-flex items-center gap-1.5 px-4 py-2.5 rounded font-semibold text-sm text-black hover:brightness-110 transition shadow-[0_8px_24px_-6px_rgba(124,92,255,0.6)]"
             >
               Open the heatmap
               <ArrowRight size={13} strokeWidth={2.5} />

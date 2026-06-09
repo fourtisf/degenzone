@@ -32,7 +32,7 @@ const HERO_FEATURES = [
     title: 'Pump alerts',
     body:
       'Composite signal: volume z-score × buyer velocity × price acceleration × buy share. Audio + Telegram alert the second it fires.',
-    color: '#FF6B35',
+    color: '#FFB800',
     visual: 'pulse',
   },
 ];
@@ -137,7 +137,7 @@ function FeatureVisual({ kind, color }: { kind: string; color: string }) {
               }}
             >
               {isSmart && <span className="absolute top-1 left-1 w-1.5 h-1.5 rounded-full" style={{ background: color, boxShadow: `0 0 4px ${color}` }} />}
-              {isPump && <div className="absolute inset-0 rounded ring-1 ring-accent animate-pulse" />}
+              {isPump && <div className="absolute inset-0 rounded ring-1 ring-pump animate-pulse" />}
             </div>
           );
         })}
@@ -192,15 +192,15 @@ function FeatureVisual({ kind, color }: { kind: string; color: string }) {
   // pulse
   return (
     <div className="mt-7 max-w-sm">
-      <div className="rounded p-3 bg-surface-2 border border-accent/40 relative overflow-hidden">
-        <div className="absolute inset-0 ring-1 ring-accent animate-pulse pointer-events-none" />
+      <div className="rounded p-3 bg-surface-2 border border-pump/40 relative overflow-hidden">
+        <div className="absolute inset-0 ring-1 ring-pump animate-pulse pointer-events-none" />
         <div className="flex items-center gap-2 text-[10px]">
           <div className="w-7 h-7 rounded-full bg-emerald-600/30 ring-1 ring-emerald-500/40 flex items-center justify-center text-[9px] font-bold">W</div>
           <div className="flex-1">
             <div className="font-bold text-sm">WIF</div>
-            <div className="text-accent text-[9px] uppercase tracking-wider">PUMP SIGNAL · z=3.2 · burst 5.1x</div>
+            <div className="text-pump text-[9px] uppercase tracking-wider">PUMP SIGNAL · z=3.2 · burst 5.1x</div>
           </div>
-          <div className="text-accent font-mono font-bold">+18%</div>
+          <div className="text-pump font-mono font-bold">+18%</div>
         </div>
       </div>
     </div>

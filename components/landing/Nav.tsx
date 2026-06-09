@@ -45,8 +45,7 @@ export default function Nav() {
         <div className="flex items-center gap-2">
           <Link
             href="/app"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded text-black hover:brightness-110 transition"
-            style={{ background: 'linear-gradient(135deg, #FFB800 0%, #FF6B35 100%)' }}
+            className="bg-brand-gradient inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded text-black hover:brightness-110 transition"
           >
             Launch app
             <ArrowRight size={11} strokeWidth={2.5} />

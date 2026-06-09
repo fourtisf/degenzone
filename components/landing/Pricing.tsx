@@ -92,7 +92,7 @@ export default function Pricing() {
                 t.highlight
                   ? {
                       boxShadow:
-                        '0 0 0 1px rgba(255,184,0,0.15), 0 30px 80px -20px rgba(255,184,0,0.25), inset 0 1px 0 rgba(255,255,255,0.05)',
+                        '0 0 0 1px rgba(124,92,255,0.18), 0 30px 80px -20px rgba(124,92,255,0.3), inset 0 1px 0 rgba(255,255,255,0.05)',
                     }
                   : undefined
               }
@@ -100,8 +100,7 @@ export default function Pricing() {
               {t.badge && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                   <span
-                    className="px-2.5 py-0.5 rounded-full text-[10px] uppercase tracking-widest font-bold text-black shadow-[0_4px_16px_-2px_rgba(255,184,0,0.6)]"
-                    style={{ background: 'linear-gradient(135deg, #FFB800 0%, #FF6B35 100%)' }}
+                    className="bg-brand-gradient px-2.5 py-0.5 rounded-full text-[10px] uppercase tracking-widest font-bold text-black shadow-[0_4px_16px_-2px_rgba(124,92,255,0.6)]"
                   >
                     {t.badge}
                   </span>
@@ -119,14 +118,9 @@ export default function Pricing() {
                 href={t.href}
                 className={`mt-5 flex items-center justify-center gap-1.5 w-full py-3 rounded-md font-semibold text-sm transition group ${
                   t.highlight
-                    ? 'text-black hover:brightness-110 shadow-[0_8px_24px_-6px_rgba(255,184,0,0.55)]'
+                    ? 'bg-brand-gradient text-black hover:brightness-110 shadow-[0_8px_24px_-6px_rgba(124,92,255,0.55)]'
                     : 'bg-surface-2 border border-border-line hover:border-border-strong text-white'
                 }`}
-                style={
-                  t.highlight
-                    ? { background: 'linear-gradient(135deg, #FFB800 0%, #FF6B35 100%)' }
-                    : undefined
-                }
               >
                 {t.highlight && <Sparkles size={13} strokeWidth={2.5} />}
                 {t.cta}

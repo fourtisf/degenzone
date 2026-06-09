@@ -60,7 +60,7 @@ export default function DashboardMockup() {
   return (
     <div className="relative w-full max-w-6xl mx-auto">
       {/* Ambient glow under the panel */}
-      <div className="absolute inset-x-12 -inset-y-10 bg-gradient-to-b from-accent/15 via-cyan-500/5 to-transparent blur-3xl rounded-full pointer-events-none" />
+      <div className="absolute inset-x-12 -inset-y-10 bg-gradient-to-b from-brand/15 via-brand-2/10 to-transparent blur-3xl rounded-full pointer-events-none" />
 
       <div
         className="relative rounded-xl overflow-hidden border border-border-line shadow-[0_60px_120px_-30px_rgba(0,0,0,0.85),0_0_0_1px_rgba(255,255,255,0.04)] bg-surface-1"
@@ -117,7 +117,7 @@ export default function DashboardMockup() {
           <KPI icon={<TrendingUp size={9} className="text-emerald-500" />} label="Up" value={`58 / ${80 + Math.floor(delta(0))}`} valClass="text-emerald-400" />
           <KPI icon={<TrendingDown size={9} className="text-red-500" />} label="Down" value="22 / 80" valClass="text-red-400" />
           <KPI icon={<Brain size={9} className="text-cyan-400" />} label="Smart" value="7" valClass="text-cyan-400" />
-          <KPI icon={<Zap size={9} className="text-accent" />} label="Pump" value="3" valClass="text-accent" />
+          <KPI icon={<Zap size={9} className="text-pump" />} label="Pump" value="3" valClass="text-pump" />
           <KPI icon={<Gem size={9} className="text-whale" />} label="Whale" value="5" />
           <KPI icon={<Sparkles size={9} />} label="Top mover" value={<span className="flex items-center gap-1">WIF <span className="px-1 py-0.5 rounded bg-emerald-700 text-white text-[8px]">+18%</span></span>} />
         </div>
@@ -166,7 +166,7 @@ export default function DashboardMockup() {
                     <Star size={8} className="absolute top-1 right-1 text-amber-300" fill="#FFB800" strokeWidth={0} />
                   )}
                   {t.pump && (
-                    <div className="absolute inset-0 rounded-[2px] ring-1 ring-accent animate-pulse pointer-events-none" />
+                    <div className="absolute inset-0 rounded-[2px] ring-1 ring-pump animate-pulse pointer-events-none" />
                   )}
                   <div
                     className="font-bold tracking-tight text-white leading-none"
@@ -247,10 +247,7 @@ export default function DashboardMockup() {
               </div>
             </div>
             <div className="p-2 mt-auto">
-              <div
-                className="w-full text-center py-1.5 rounded text-[10px] font-bold text-black"
-                style={{ background: 'linear-gradient(135deg, #FFB800 0%, #FF6B35 100%)' }}
-              >
+              <div className="bg-brand-gradient w-full text-center py-1.5 rounded text-[10px] font-bold text-black">
                 Trade on Jupiter →
               </div>
             </div>
@@ -261,7 +258,7 @@ export default function DashboardMockup() {
       {/* Tag stripe under mockup */}
       <div className="hidden md:flex items-center justify-center gap-6 mt-6 text-[10px] uppercase tracking-widest text-zinc-600 font-semibold">
         <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-cyan-400" /> Smart money</span>
-        <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-accent" /> Pump signal</span>
+        <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-pump" /> Pump signal</span>
         <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-whale" /> Whale activity</span>
         <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-emerald-500" /> 15s refresh</span>
       </div>

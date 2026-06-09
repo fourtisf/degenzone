@@ -20,7 +20,7 @@ export async function GET() {
           position: 'relative',
         }}
       >
-        {/* Warm ambient blob */}
+        {/* Violet ambient blob */}
         <div
           style={{
             position: 'absolute',
@@ -29,12 +29,12 @@ export async function GET() {
             width: 700,
             height: 700,
             borderRadius: '50%',
-            background: '#FF6B35',
-            opacity: 0.18,
+            background: '#7C5CFF',
+            opacity: 0.22,
             display: 'flex',
           }}
         />
-        {/* Cool ambient blob */}
+        {/* Cyan ambient blob */}
         <div
           style={{
             position: 'absolute',
@@ -43,8 +43,8 @@ export async function GET() {
             width: 700,
             height: 700,
             borderRadius: '50%',
-            background: '#14F195',
-            opacity: 0.14,
+            background: '#22D3EE',
+            opacity: 0.16,
             display: 'flex',
           }}
         />
@@ -83,7 +83,7 @@ export async function GET() {
               }}
             >
               <span>The&nbsp;</span>
-              <span style={{ color: '#FFB800' }}>unfair edge</span>
+              <span style={{ color: '#22D3EE' }}>unfair edge</span>
             </div>
             <div
               style={{

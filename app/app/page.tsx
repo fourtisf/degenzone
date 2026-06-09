@@ -413,7 +413,7 @@ export default function AppPage() {
         <KPI icon={<TrendingUp size={11} strokeWidth={2.5} className="text-emerald-500" />} label="Up" value={stats.count > 0 ? `${stats.up} / ${stats.count}` : '—'} accent="emerald" />
         <KPI icon={<TrendingDown size={11} strokeWidth={2.5} className="text-red-500" />} label="Down" value={stats.count > 0 ? `${stats.down} / ${stats.count}` : '—'} accent="red" />
         <KPI icon={<Brain size={11} strokeWidth={2.5} className="text-cyan-400" />} label="Smart money" value={String(stats.smartCount)} accent="cyan" />
-        <KPI icon={<Zap size={11} strokeWidth={2.5} className="text-accent" />} label="Pump signals" value={String(pumpSet.size)} highlight={pumpSet.size > 0} />
+        <KPI icon={<Zap size={11} strokeWidth={2.5} className="text-pump" />} label="Pump signals" value={String(pumpSet.size)} highlight={pumpSet.size > 0} />
         <KPI icon={<Gem size={11} strokeWidth={2.5} className="text-whale" />} label="Whale activity" value={String(whaleSet.size)} />
         {stats.topMover && (
           <KPI icon={<Sparkles size={11} strokeWidth={2.5} />} label={`Top mover · ${TIMEFRAMES.find((t) => t.id === timeframe)?.label}`}
@@ -541,7 +541,7 @@ function TileTooltip({ tooltip, timeframe, pumpSet, whaleSet, watchlist }: { too
             <span className="text-[9px] uppercase font-bold tracking-wider px-1 py-0.5 rounded bg-cyan-400/15 text-cyan-400 border border-cyan-400/30">smart</span>
           )}
           {pumpSet.has(tooltip.token.address) && (
-            <span className="text-[9px] uppercase font-bold tracking-wider px-1 py-0.5 rounded bg-accent/15 text-accent border border-accent/30">pump</span>
+            <span className="text-[9px] uppercase font-bold tracking-wider px-1 py-0.5 rounded bg-pump/15 text-pump border border-pump/30">pump</span>
           )}
           {whaleSet.has(tooltip.token.address) && (
             <span className="text-[9px] uppercase font-bold tracking-wider px-1 py-0.5 rounded bg-whale/15 text-whale border border-whale/30">whale</span>
@@ -562,7 +562,7 @@ function KPI({ icon, label, value, highlight, accent }: { icon: React.ReactNode;
       <div className="flex flex-col leading-none">
         <span className="text-[9px] uppercase tracking-wider text-zinc-500">{label}</span>
         <span className={`text-[13px] font-semibold tabular-nums mt-0.5 ${
-          highlight ? 'text-accent' :
+          highlight ? 'text-pump' :
           accent === 'emerald' ? 'text-emerald-400' :
           accent === 'red' ? 'text-red-400' :
           accent === 'cyan' ? 'text-cyan-400' : 'text-zinc-100'

@@ -118,8 +118,7 @@ export default function Scanner({ initialAddress = '' }: { initialAddress?: stri
         <button
           type="submit"
           disabled={loading}
-          className="inline-flex items-center gap-1.5 px-4 py-2.5 text-sm font-semibold rounded text-black hover:brightness-110 transition disabled:opacity-60"
-          style={{ background: 'linear-gradient(135deg, #FFB800 0%, #FF6B35 100%)' }}
+          className="bg-brand-gradient inline-flex items-center gap-1.5 px-4 py-2.5 text-sm font-semibold rounded text-black hover:brightness-110 transition disabled:opacity-60"
         >
           {loading ? <Loader2 size={14} className="animate-spin" /> : <Search size={14} strokeWidth={2.5} />}
           Scan

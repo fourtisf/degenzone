@@ -18,12 +18,19 @@ const config: Config = {
         line: '#1F1F2A',           // alias for legacy classes
 
         panel: '#0F0F14',          // alias for SidePanel
-        // Brand
-        brand: '#FF6B35',
-        'brand-soft': '#FFB800',
-        accent: '#FFB800',
-        mega: '#FF2D87',
-        whale: '#E6B800',
+
+        // Brand — electric violet → cyan ("premium terminal")
+        brand: '#7C5CFF',          // primary violet
+        'brand-soft': '#A78BFA',   // soft violet — glows & halos
+        'brand-2': '#22D3EE',      // cyan — gradient partner
+        accent: '#22D3EE',         // cyan — brand highlights / eyebrows / focus
+
+        // Semantic signals — independent of brand so they never collide
+        smart: '#22D3EE',          // cyan — smart-money accumulation
+        pump: '#FFB800',           // amber — pump alert (warm, pops vs violet)
+        gold: '#FFB800',           // amber — watchlist stars
+        mega: '#FF2D87',           // pink — mega pump
+        whale: '#E6B800',          // gold — whale activity
 
         // Chain brand colors
         'chain-solana': '#14F195',

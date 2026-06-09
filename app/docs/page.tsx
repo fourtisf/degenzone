@@ -139,7 +139,7 @@ export default function DocsPage() {
               }
             />
             <SignalCard
-              color="#FFB800"
+              color="#22D3EE"
               icon={<Sparkles size={14} strokeWidth={2.5} />}
               title="Fresh"
               body={

@@ -100,7 +100,7 @@ export default function SidePanel({ token, watched, isPump, isWhale, onToggleWat
           <div className="flex items-center gap-1.5 mb-0.5">
             <span className="font-bold text-base tracking-tight truncate">{token.symbol}</span>
             {isPump && (
-              <span className="text-[9px] uppercase font-bold tracking-wider px-1 py-0.5 rounded bg-accent/15 text-accent border border-accent/30 flex items-center gap-0.5">
+              <span className="text-[9px] uppercase font-bold tracking-wider px-1 py-0.5 rounded bg-pump/15 text-pump border border-pump/30 flex items-center gap-0.5">
                 <Zap size={9} strokeWidth={3} /> pump
               </span>
             )}
@@ -116,7 +116,7 @@ export default function SidePanel({ token, watched, isPump, isWhale, onToggleWat
           <button
             onClick={() => onToggleWatch(token.address)}
             className={`w-8 h-8 rounded transition flex items-center justify-center ${
-              watched ? 'text-accent hover:bg-surface-2' : 'text-zinc-500 hover:text-accent hover:bg-surface-2'
+              watched ? 'text-gold hover:bg-surface-2' : 'text-zinc-500 hover:text-gold hover:bg-surface-2'
             }`}
             title={watched ? 'Remove from watchlist' : 'Add to watchlist'}
             aria-label="Toggle watchlist"
@@ -283,8 +283,7 @@ export default function SidePanel({ token, watched, isPump, isWhale, onToggleWat
           href={tradeUrl(token)}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-1.5 w-full py-2.5 rounded font-semibold text-[13px] transition hover:brightness-110"
-          style={{ background: 'linear-gradient(135deg, #FFB800 0%, #FF6B35 100%)', color: '#000' }}
+          className="bg-brand-gradient text-black flex items-center justify-center gap-1.5 w-full py-2.5 rounded font-semibold text-[13px] transition hover:brightness-110"
         >
           <Sparkles size={14} strokeWidth={2.5} />
           Trade on {token.chain === 'solana' ? 'Jupiter' : 'Uniswap'}

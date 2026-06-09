@@ -93,8 +93,7 @@ export default function WalletPanel({ wallet, setWallet, onLoad, onClose }: Prop
         <button
           onClick={load}
           disabled={loading || input.length < 32}
-          className="w-full py-2 rounded font-semibold text-xs text-black disabled:opacity-40 disabled:cursor-not-allowed hover:brightness-110 transition flex items-center justify-center gap-1.5"
-          style={{ background: 'linear-gradient(135deg, #FFB800 0%, #FF6B35 100%)' }}
+          className="bg-brand-gradient w-full py-2 rounded font-semibold text-xs text-black disabled:opacity-40 disabled:cursor-not-allowed hover:brightness-110 transition flex items-center justify-center gap-1.5"
         >
           {loading ? <Loader2 size={12} className="animate-spin" /> : null}
           {loading ? 'Querying chain…' : 'Overlay portfolio'}

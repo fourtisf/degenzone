@@ -36,7 +36,7 @@ export default function Footer() {
               <FooterLink href="/status">Status</FooterLink>
             </Col>
             <Col title="Company">
-              <FooterLink href="https://x.com/degenzone" external>
+              <FooterLink href="https://x.com/degenzonexyz" external>
                 <span className="inline-flex items-center gap-1.5">
                   <XIcon /> X / Twitter
                 </span>

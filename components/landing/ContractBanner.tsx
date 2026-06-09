@@ -47,7 +47,7 @@ export default function ContractBanner() {
             onClick={copy}
             disabled
             className="font-mono tabular-nums text-zinc-400 tracking-wider cursor-default truncate"
-            title="Token launch coming soon — follow @degenzone on X for the announcement"
+            title="Token launch coming soon — follow @degenzonexyz on X for the announcement"
           >
             <span className="hidden sm:inline">Token launch — </span>
             <span className="text-zinc-200 font-semibold">COMING SOON</span>
@@ -70,13 +70,13 @@ export default function ContractBanner() {
         <span className="text-zinc-600 hidden sm:inline">·</span>
 
         <Link
-          href="https://x.com/degenzone"
+          href="https://x.com/degenzonexyz"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1 text-zinc-400 hover:text-white transition shrink-0 group"
         >
           <span className="hidden sm:inline">Updates on</span>
-          <span className="font-semibold">@degenzone</span>
+          <span className="font-semibold">@degenzonexyz</span>
           <ArrowRight size={10} strokeWidth={2.5} className="group-hover:translate-x-0.5 transition" />
         </Link>
       </div>

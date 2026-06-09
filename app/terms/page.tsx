@@ -104,7 +104,7 @@ export default function TermsPage() {
           <Section title="9. Changes">
             <p>
               We may update these terms from time to time. Material changes will be announced via
-              the Service or our X account (<a href="https://x.com/degenzone" className="underline hover:text-zinc-100">@degenzone</a>).
+              the Service or our X account (<a href="https://x.com/degenzonexyz" className="underline hover:text-zinc-100">@degenzonexyz</a>).
               Continued use after a change constitutes acceptance.
             </p>
           </Section>

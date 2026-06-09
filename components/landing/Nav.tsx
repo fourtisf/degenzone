@@ -36,7 +36,7 @@ export default function Nav() {
           {LINKS.map((l) => (
             <Link key={l.href} href={l.href} className="hover:text-white transition">{l.label}</Link>
           ))}
-          <a href="https://x.com/degenzone" target="_blank" rel="noopener noreferrer" className="hover:text-white transition flex items-center gap-1" aria-label="DegenZone on X">
+          <a href="https://x.com/degenzonexyz" target="_blank" rel="noopener noreferrer" className="hover:text-white transition flex items-center gap-1" aria-label="DegenZone on X">
             <XIcon size={12} />
             <span>X</span>
           </a>
@@ -75,7 +75,7 @@ export default function Nav() {
             </Link>
           ))}
           <a
-            href="https://x.com/degenzone"
+            href="https://x.com/degenzonexyz"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}

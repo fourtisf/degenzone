@@ -98,7 +98,7 @@ export default function PrivacyPage() {
           <Section title="6. Changes">
             <p>
               Material changes to this policy will be announced on{' '}
-              <a href="https://x.com/degenzone" className="underline hover:text-zinc-100">@degenzone</a>{' '}
+              <a href="https://x.com/degenzonexyz" className="underline hover:text-zinc-100">@degenzonexyz</a>{' '}
               and in the changelog. The &quot;last updated&quot; date at the top reflects the latest revision.
             </p>
           </Section>

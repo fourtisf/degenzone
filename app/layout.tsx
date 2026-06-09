@@ -35,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@degenzone',
-    creator: '@degenzone',
+    site: '@degenzonexyz',
+    creator: '@degenzonexyz',
     title: 'DegenZone — The unfair edge for Solana traders',
     description: 'See what is pumping, what is rotating, and what smart money is buying.',
     images: ['/og'],

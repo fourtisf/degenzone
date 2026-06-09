@@ -8,12 +8,15 @@ export default function Logo({ size = 22 }: { size?: number }) {
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden
     >
-      {/* Three ascending bars — violet → cyan, the "market rising" mnemonic. */}
-      <rect x="3"  y="18" width="5" height="7"  rx="1.25" fill="#7C5CFF" />
-      <rect x="10" y="12" width="5" height="13" rx="1.25" fill="#4F97F6" />
-      <rect x="17" y="5"  width="5" height="20" rx="1.25" fill="#22D3EE" />
-      {/* Bright tip — the "edge". */}
-      <rect x="17" y="5" width="5" height="3" rx="1.25" fill="#A5F3FC" />
+      {/* Gradient badge + energy bolt — violet → cyan brand mark. */}
+      <defs>
+        <linearGradient id="dz-logo" x1="2" y1="26" x2="26" y2="2" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stopColor="#7C5CFF" />
+          <stop offset="1" stopColor="#22D3EE" />
+        </linearGradient>
+      </defs>
+      <rect x="2" y="2" width="24" height="24" rx="6.5" fill="url(#dz-logo)" />
+      <path d="M16 5 L10 15.5 H14 L12 23 L19 11.5 H15 Z" fill="#0A0A0F" opacity="0.9" />
     </svg>
   );
 }

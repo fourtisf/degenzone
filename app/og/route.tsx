@@ -61,10 +61,20 @@ export async function GET() {
         >
           {/* Header */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-            <div style={{ display: 'flex', alignItems: 'flex-end', gap: 4 }}>
-              <div style={{ width: 16, height: 22, borderRadius: 3, background: '#7C5CFF', display: 'flex' }} />
-              <div style={{ width: 16, height: 40, borderRadius: 3, background: '#4F97F6', display: 'flex' }} />
-              <div style={{ width: 16, height: 60, borderRadius: 3, background: '#22D3EE', display: 'flex' }} />
+            <div
+              style={{
+                width: 60,
+                height: 60,
+                borderRadius: 15,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                background: 'linear-gradient(135deg, #7C5CFF, #22D3EE)',
+              }}
+            >
+              <svg width="34" height="34" viewBox="0 0 28 28">
+                <path d="M16 5 L10 15.5 H14 L12 23 L19 11.5 H15 Z" fill="#0A0A0F" />
+              </svg>
             </div>
             <div style={{ fontSize: 32, fontWeight: 700, letterSpacing: '-0.02em', display: 'flex' }}>
               DegenZone
@@ -80,9 +90,10 @@ export async function GET() {
                 letterSpacing: '-0.03em',
                 lineHeight: 1.05,
                 display: 'flex',
+                gap: 22,
               }}
             >
-              <span>The&nbsp;</span>
+              <span>The</span>
               <span style={{ color: '#22D3EE' }}>unfair edge</span>
             </div>
             <div

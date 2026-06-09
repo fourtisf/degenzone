@@ -62,9 +62,9 @@ export async function GET() {
           {/* Header */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
             <div style={{ display: 'flex', alignItems: 'flex-end', gap: 4 }}>
-              <div style={{ width: 16, height: 22, borderRadius: 3, background: '#15803D', display: 'flex' }} />
-              <div style={{ width: 16, height: 40, borderRadius: 3, background: '#F59E0B', display: 'flex' }} />
-              <div style={{ width: 16, height: 60, borderRadius: 3, background: '#DC2626', display: 'flex' }} />
+              <div style={{ width: 16, height: 22, borderRadius: 3, background: '#7C5CFF', display: 'flex' }} />
+              <div style={{ width: 16, height: 40, borderRadius: 3, background: '#4F97F6', display: 'flex' }} />
+              <div style={{ width: 16, height: 60, borderRadius: 3, background: '#22D3EE', display: 'flex' }} />
             </div>
             <div style={{ fontSize: 32, fontWeight: 700, letterSpacing: '-0.02em', display: 'flex' }}>
               DegenZone

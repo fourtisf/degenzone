@@ -63,18 +63,35 @@ export async function GET() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
             <div
               style={{
-                width: 60,
-                height: 60,
-                borderRadius: 15,
+                width: 64,
+                height: 64,
+                borderRadius: 999,
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 background: 'linear-gradient(135deg, #7C5CFF, #22D3EE)',
               }}
             >
-              <svg width="34" height="34" viewBox="0 0 28 28">
-                <path d="M16 5 L10 15.5 H14 L12 23 L19 11.5 H15 Z" fill="#0A0A0F" />
-              </svg>
+              <div
+                style={{
+                  width: 57,
+                  height: 57,
+                  borderRadius: 999,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  background: '#0E0E15',
+                }}
+              >
+                <svg width="40" height="40" viewBox="0 0 100 100">
+                  <rect x="35.8" y="50" width="2.4" height="21" rx="1.2" fill="#A78BFA" />
+                  <rect x="32.6" y="56" width="8.8" height="11" rx="2.6" fill="#A78BFA" />
+                  <rect x="48.8" y="37" width="2.4" height="28" rx="1.2" fill="#7FA0F4" />
+                  <rect x="45.6" y="44" width="8.8" height="16" rx="2.6" fill="#7FA0F4" />
+                  <rect x="61.8" y="29" width="2.4" height="30" rx="1.2" fill="#34E0F0" />
+                  <rect x="58.6" y="33" width="8.8" height="19" rx="2.6" fill="#34E0F0" />
+                </svg>
+              </div>
             </div>
             <div style={{ fontSize: 32, fontWeight: 700, letterSpacing: '-0.02em', display: 'flex' }}>
               DegenZone

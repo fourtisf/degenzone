@@ -30,7 +30,7 @@ export default function Footer() {
             <Col title="Resources">
               <FooterLink href="/docs">Docs</FooterLink>
               <FooterLink href="/docs/api">API reference</FooterLink>
-              <FooterLink href="https://t.me/degenzone" external>
+              <FooterLink href="https://t.me/degenzonexyz" external>
                 Telegram bot
               </FooterLink>
               <FooterLink href="/status">Status</FooterLink>
@@ -41,7 +41,7 @@ export default function Footer() {
                   <XIcon /> X / Twitter
                 </span>
               </FooterLink>
-              <FooterLink href="https://t.me/degenzone" external>
+              <FooterLink href="https://t.me/degenzonexyz" external>
                 Telegram
               </FooterLink>
               <FooterLink href="/terms">Terms</FooterLink>

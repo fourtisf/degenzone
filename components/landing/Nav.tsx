@@ -13,6 +13,14 @@ function XIcon({ size = 12 }: { size?: number }) {
   );
 }
 
+function TgIcon({ size = 13 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+      <path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z" />
+    </svg>
+  );
+}
+
 const LINKS = [
   { href: '/#features', label: 'Features' },
   { href: '/#pricing', label: 'Pricing' },
@@ -39,6 +47,10 @@ export default function Nav() {
           <a href="https://x.com/degenzonexyz" target="_blank" rel="noopener noreferrer" className="hover:text-white transition flex items-center gap-1" aria-label="DegenZone on X">
             <XIcon size={12} />
             <span>X</span>
+          </a>
+          <a href="https://t.me/degenzonexyz" target="_blank" rel="noopener noreferrer" className="hover:text-white transition flex items-center gap-1" aria-label="DegenZone on Telegram">
+            <TgIcon size={14} />
+            <span>TG</span>
           </a>
         </nav>
 
@@ -83,6 +95,16 @@ export default function Nav() {
           >
             <XIcon size={13} />
             <span>X / Twitter</span>
+          </a>
+          <a
+            href="https://t.me/degenzonexyz"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+            className="px-1 py-2 text-zinc-300 hover:text-white transition flex items-center gap-2"
+          >
+            <TgIcon size={15} />
+            <span>Telegram</span>
           </a>
         </nav>
       )}

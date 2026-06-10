@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Copy, Check, ArrowRight } from 'lucide-react';
 
-const BUILD_TIME_CA = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS || 'FRRCzuixFUm9NP2257NMoxTrnhJVgNSnKVrX7isKpump';
+const BUILD_TIME_CA = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS || 'COMING_SOON';
 
 export default function ContractBanner() {
   const [copied, setCopied] = useState(false);
@@ -43,15 +43,19 @@ export default function ContractBanner() {
         </span>
 
         {isComingSoon ? (
-          <button
-            onClick={copy}
-            disabled
-            className="font-mono tabular-nums text-zinc-400 tracking-wider cursor-default truncate"
+          <span
+            className="inline-flex items-center gap-2 font-mono tracking-wider truncate cursor-default"
             title="Token launch coming soon — follow @degenzonexyz on X for the announcement"
           >
-            <span className="hidden sm:inline">Token launch — </span>
-            <span className="text-zinc-200 font-semibold">COMING SOON</span>
-          </button>
+            <span className="relative inline-flex shrink-0">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+              <span className="absolute inset-0 rounded-full bg-accent animate-ping opacity-70" />
+            </span>
+            <span className="text-zinc-400">
+              <span className="hidden sm:inline">Token launch — </span>
+              <span className="font-bold text-white">COMING SOON</span>
+            </span>
+          </span>
         ) : (
           <button
             onClick={copy}

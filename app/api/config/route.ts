@@ -9,7 +9,7 @@ export function GET() {
   const ca =
     process.env.CONTRACT_ADDRESS ||
     process.env.NEXT_PUBLIC_CONTRACT_ADDRESS ||
-    'FRRCzuixFUm9NP2257NMoxTrnhJVgNSnKVrX7isKpump';
+    'COMING_SOON';
 
   return NextResponse.json(
     { contractAddress: ca },

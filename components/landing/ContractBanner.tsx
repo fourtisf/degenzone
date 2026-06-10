@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Copy, Check, ArrowRight } from 'lucide-react';
 
-const BUILD_TIME_CA = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS || 'COMING_SOON';
+const BUILD_TIME_CA = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS || '8Gj1gnS1iM8ThxCVXz81BY5hoq9VZpdmXMEmuE11pump';
 
 export default function ContractBanner() {
   const [copied, setCopied] = useState(false);
